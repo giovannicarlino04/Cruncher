@@ -1,0 +1,9 @@
+Short term:
+	Basic file packing
+	Basic file unpacking
+
+Medium term
+	Folder packing/unpacking
+
+Long term
+	Huffman compression (or some other idk)
