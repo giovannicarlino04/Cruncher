@@ -1,1 +1,1 @@
-cl.exe /Zi main.c
+cl.exe /Zi /Fe:cruncher.exe main.c src\file_utils.c src\cruncher.c

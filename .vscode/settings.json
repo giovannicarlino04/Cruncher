@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "file_utils.h": "c",
+        "stdio.h": "c",
+        "cruncher.h": "c"
+    }
+}
