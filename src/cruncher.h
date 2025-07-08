@@ -18,4 +18,6 @@ typedef struct{
 int DEBUG_cruncher_pack_single_file(const char* input_file);
 int DEBUG_cruncher_unpack_single_file(const char* input_file);
 
+int cruncher_pack_folder(const char* sDir);
+int cruncher_unpack(const char *crnFilePath, const char *outDir);
 #endif //CRUNCHER_H

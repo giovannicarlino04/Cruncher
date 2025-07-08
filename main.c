@@ -5,19 +5,17 @@
 int main(int argc, char** argv){
     
     if(argc != 2){
-        printf("Usage: <Program> <File>");
+        printf("Usage: <Program> <Directory> || <file.crn>");
         return 1;
     }
-    printf("Packing %s to debug.crn\n", argv[1]);
-    
     if(argv[1] == NULL){
         printf("No file specified.\n");
         return 1;
     }
     
-    if(get_file_extension(argv[1]) == "crn")
-        DEBUG_cruncher_unpack_single_file(argv[1]);
+    if(is_dir(argv[1]))
+        cruncher_pack_folder(argv[1]);
     else
-        DEBUG_cruncher_pack_single_file(argv[1]);
+        cruncher_unpack(argv[1], "./Out");
     return 0;
 }
